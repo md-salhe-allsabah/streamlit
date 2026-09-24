@@ -10,7 +10,7 @@ st.divider()
 
 with st.container(border=True):
     st.write(
-        "Hi, I'm allsabah, Hopefully this streamlit app is hosted successfully on the streamlit cloud. I'm intended to dump here some of my important and frequently used resource links as my college and universities sites get crashed every alternate week."
+        "Hi, I'm allsabah, Hopefully this streamlit app is hosted successfully on the streamlit cloud. I'm intended to dump here some of my important and frequently used resource links as my college and university's sites get crashed every alternate week."
     )
 
 st.divider()
@@ -26,15 +26,3 @@ st.dataframe(
     column_config={"Link": st.column_config.LinkColumn("Google Drive Link")},
     hide_index=True,
 )
-    
-    
-# Inject custom CSS to hide the footer and hamburger menu
-hide_style = """
-    <style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    div[data-testid="stDecoration"] {display: none;}
-    </style>
-"""
-st.markdown(hide_style, unsafe_allow_html=True)
-    
